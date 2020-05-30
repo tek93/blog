@@ -1,0 +1,21 @@
+<header>
+    <nav class ="navbar navbar-expand-md navbar-light bg-light">
+    <div><a href="/posts" class="navbar-brand">Home</a></div>
+    
+    <ul class="navbar-nav">
+      <!-- <li><a *ngif="loginService.isUserLoggedIn()"   routerLink="/posts" class="nav-link">View Post</a></li>
+      <li><a   *ngif="loginService.isUserLoggedIn()"  routerLink="/add" class="nav-link">Write a new Post!</a></li>
+        <li><a *ngif="! loginService.isUserLoggedIn()" routerLink="/login" class="nav-link" > Login</a> </li> -->
+
+     
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link">View Posts</a></li>
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/add" class="nav-link">Add New Post</a></li>
+        <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+      
+
+    

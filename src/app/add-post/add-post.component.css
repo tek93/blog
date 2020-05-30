@@ -1,0 +1,14 @@
+form{
+   vertical-align: middle;
+   margin-left: 10%;
+   margin-right: 10%;
+  
+   
+}
+input{
+   height: 40px;
+
+}
+textarea{
+    height: 800px;
+}

@@ -1,0 +1,82 @@
+<!-- 	
+<table>
+    <thead></thead>
+    <tr>
+      <th>name</th>
+      <th>Description</th>
+      <th>author</th>
+      
+      </tr>
+    
+    <tbody>
+        <tr *ngFor="let post of posts">
+          <h2 class="post-title">
+            <td  scope="col">{{post.name}}</td>
+          </h2>
+        <br/>
+
+          <div class="post-preview">
+           
+              <h2 class="post-title">
+                <td></td>
+              </h2>
+            <br/>
+        
+           
+          </div>
+          <p class="post-meta"> <td>{{post.author}}</td></p>
+        <br/>
+            
+      
+            <td><button class="btn btn-danger" (click)="deletePost(post)"> Delete This Post</button></td>
+            </tr>
+    </tbody>
+      </table> -->
+      
+        <div  class="post" *ngFor="let post of posts">
+      <h1>{{post.name}}</h1>
+      <p>{{post.description}}</p>
+      <div>
+        <div class="alert alert-secondary" role="alert">
+          <span class="badge">{{post.author}}</span>
+       
+        
+        <button class="btn btn-light" (click)="deletePost(post)"> Delete This Post</button>
+      </div>
+ 
+  </div>
+  <hr>
+
+ 
+
+<!--     
+      </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav> -->
+    
+
+
+    
+<!-- 
+      <div class="container" >
+        <div class="col-md-12"*ngFor="let post of posts">
+            <h1>{{post.name}}</h1>
+            <br/>
+            <br/>
+            <p>{{post.description}}</p>
+            <br/>
+            <br/>
+            <br/>
+            <div>
+        <span class="badge">{{post.author}}</span>
+            
+             </div>
+         
+        </div>
+        </div>
+       -->
+
+
